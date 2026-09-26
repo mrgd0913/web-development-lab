@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Лаборатори 02: Хэрэглэгчийн анкет</title>
+</head>
+<body>
+ <header>
+ <h1>Оюутны Бүртгэлийн Портал</h1>
+ <nav>
+ <ul>
+ <li><a href="../index.html">Нүүр</a></li>
+ <li><a href="#">Анкет засах</a></li>
+ <li><a href="#">Тусламж</a></li>
+ </ul>
+ </nav>
+ </header>
+
+ <main>
+ <article>
+ <section>
+ <h2>Хэрэглэгчийн Анкет Бөглөх</h2>
+ <p>Доорх формын дагуу мэдээллээ бүрэн, үнэн зөв зааж бөглөнө үү.</p>
+ <form action="#" method="POST" enctype="multipart/form-data">
+ <fieldset>
+ <legend>Хувийн мэдээлэл</legend>
+ <label for="fullname">Овог нэр:</label><br>
+ <input type="text" id="fullname" name="fullname" placeholder="И. Болдбаатар" required minlength="2"><br><br>
+
+ <label for="email">Цахим хаяг (Email):</label><br>
+ <input type="email" id="email" name="email" placeholder="example@domain.com" required><br><br>
+
+ <label for="password">Нууц үг:</label><br>
+ <input type="password" id="password" name="password" required minlength="6"><br><br>
+
+ <label for="phone">Утасны дугаар:</label><br>
+ <input type="tel" id="phone" name="phone" pattern="[0-9]{8}" placeholder="88112233" required><br><br>
+
+ <label for="dob">Төрсөн огноо:</label><br>
+ <input type="date" id="dob" name="dob" required><br><br>
+
+ <label>Хүйс:</label><br>
+ <input type="radio" id="male" name="gender" value="male">
+ <label for="male">Эрэгтэй</label>
+ <input type="radio" id="female" name="gender" value="female">
+ <label for="female">Эмэгтэй</label><br>
+ </fieldset>
+ <br>
+
+ <fieldset>
+ <legend>Боловсрол ба Сонирхол</legend>
+ <label for="degree">Суралцаж буй түвшин:</label><br>
+ <select id="degree" name="degree" required>
+ <option value="">-- Сонгоно уу --</option>
+ <option value="bachelor">Бакалавр</option>
+ <option value="master">Магистр</option>
+ <option value="doctor">Докторант</option>
+ </select><br><br>
+
+ <label>Сонирхож буй технологиуд:</label><br>
+ <input type="checkbox" id="html" name="skills" value="HTML">
+ <label for="html">HTML5 / CSS3</label><br>
+ <input type="checkbox" id="js" name="skills" value="JavaScript">
+ <label for="js">JavaScript</label><br>
+ <input type="checkbox" id="php" name="skills" value="PHP">
+ <label for="php">PHP & MySQL</label><br><br>
+
+ <label for="avatar">Профайл зураг оруулна уу:</label><br>
+ <input type="file" id="avatar" name="avatar" accept="image/*"><br><br>
+
+ <label for="bio">Товч танилцуулга / Өөрийн тухай:</label><br>
+ <textarea id="bio" name="bio" rows="4" cols="50" placeholder="Өөрийн танилцуулгыг энд бичнэ үү..."></textarea><br>
+ </fieldset>
+ <br>
+
+ <button type="submit">Анкет Илгээх</button>
+ <button type="reset">Дахин эхлүүлэх</button>
+</form>
+ </section>
+ </article>
+  <section>
+ <h2>Миний сонирхол</h2>
+ <ul>
+ <li>Веб хөгжүүлэлт</li>
+ <li>Фото зураг авах</li>
+ <li>Кино үзэх</li>
+ </ul>
+ </section>
+
+ <section>
+ <h2>Миний дүн</h2>
+ <table>
+ <thead>
+ <tr>
+ <th>Хичээл</th>
+ <th>Дүн</th>
+ </tr>
+ </thead>
+ <tbody>
+ <tr>
+ <td>Веб зохиомж</td>
+ <td>95</td>
+ </tr>
+ <tr>
+ <td>Мэдээллийн сан</td>
+ <td>88</td>
+ </tr>
+ <tr>
+ <td>Алгоритм</td>
+ <td>92</td>
+ </tr>
+ </tbody>
+ </table>
+ </section>
+ </main>
+
+ <footer>
+ <p>&copy; 2026 Веб зохиомж хичээл. Бүх эрх хуулиар хамгаалагдсан.</p>
+ </footer>
+</body>
+</html>
