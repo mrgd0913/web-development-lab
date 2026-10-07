@@ -1,0 +1,211 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #f0f4f8;
+    color: #263244;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header {
+    padding: 30px 20px;
+    background-color: #284b80;
+    color: white;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 8px;
+}
+
+.header p {
+    margin: 0;
+}
+
+/* Flexbox navigation */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    padding: 16px 30px;
+    background-color: white;
+    border-bottom: 1px solid #dce3ec;
+}
+
+.logo {
+    color: #284b80;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.nav-links a {
+    color: #263244;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: #284b80;
+    text-decoration: underline;
+}
+
+/* Main content and sidebar */
+.layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) 260px;
+    align-items: start;
+    gap: 25px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.section-title {
+    margin: 0 0 8px;
+    color: #284b80;
+}
+
+.description {
+    margin: 0 0 22px;
+    color: #566477;
+}
+
+/* Three-column card grid */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 22px;
+    border: 1px solid #dce3ec;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.tag {
+    padding: 4px 10px;
+    border-radius: 15px;
+    background-color: #eaf0f7;
+    color: #284b80;
+    font-size: 12px;
+}
+
+.card h3 {
+    margin: 15px 0 10px;
+    color: #284b80;
+    font-size: 18px;
+}
+
+.card p {
+    margin: 0 0 20px;
+}
+
+.card .card-bottom {
+    width: 100%;
+    margin: auto 0 0;
+    padding-top: 12px;
+    border-top: 1px solid #dce3ec;
+    color: #566477;
+    font-size: 14px;
+}
+
+.sidebar {
+    padding: 22px;
+    border: 1px solid #dce3ec;
+    border-radius: 12px;
+    background-color: white;
+}
+
+.sidebar-section {
+    margin-bottom: 24px;
+}
+
+.sidebar-section:last-child {
+    margin-bottom: 0;
+}
+
+.sidebar-section h2 {
+    margin: 0 0 12px;
+    color: #284b80;
+    font-size: 18px;
+}
+
+.sidebar-section p {
+    margin: 0 0 10px;
+}
+
+.sidebar-links {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-links li {
+    margin-bottom: 12px;
+}
+
+.sidebar-links a {
+    color: #284b80;
+    text-decoration: none;
+}
+
+.sidebar-links a:hover {
+    text-decoration: underline;
+}
+
+.footer {
+    padding: 22px;
+    background-color: #284b80;
+    color: white;
+    text-align: center;
+}
+
+.footer p {
+    margin: 5px 0;
+}
+
+/* Tablet layout */
+@media (max-width: 1000px) {
+    .layout {
+        grid-template-columns: 1fr;
+    }
+
+    .course-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Mobile layout */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 16px;
+    }
+
+    .nav-links {
+        justify-content: center;
+        gap: 12px;
+    }
+
+    .course-grid {
+        grid-template-columns: 1fr;
+    }
+}
