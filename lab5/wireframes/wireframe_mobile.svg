@@ -1,0 +1,81 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1100" height="1390" viewBox="0 0 1100 1390">
+<rect width="1100" height="1390" fill="#ffffff"/>
+<text x="40" y="39" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" fill="#29323f">ЛАБ 05 / WIREFRAME</text>
+<text x="40" y="82" font-family="DejaVu Sans, Arial, sans-serif" font-size="34" font-weight="700" fill="#29323f">Гар утасны хувилбар</text>
+<text x="40" y="117" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#29323f">Нэг урт хуудсыг хоёр хэсэг болгон харуулав. Бодит хуудас нэг баганатай.</text>
+<text x="57" y="157" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#29323f">01 / ХУУДАСНЫ ЭХЛЭЛ</text>
+<text x="599" y="157" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="700" fill="#29323f">02 / ДООШ ГҮЙЛГЭСЭН ҮРГЭЛЖЛЭЛ</text>
+<rect x="40" y="178" width="478" height="1080" rx="20" fill="#f8f9fb" stroke="#7b8796" stroke-width="1.4"/>
+<rect x="580" y="178" width="478" height="1080" rx="20" fill="#f8f9fb" stroke="#7b8796" stroke-width="1.4"/>
+<rect x="60" y="199" width="438" height="104" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="79" y="233" font-family="DejaVu Sans, Arial, sans-serif" font-size="23" font-weight="700" fill="#29323f">M.  Маргад</text>
+<rect x="79" y="248" width="400" height="39" rx="10" fill="#edf0f4" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="96" y="275" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#29323f">☰  Цэс                                      +</text>
+<rect x="60" y="320" width="438" height="261" rx="10" fill="#edf0f4" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="79" y="353" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="700" fill="#29323f">ТАНИЛЦУУЛГА</text>
+<text x="79" y="393" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#29323f">Миний суралцах</text>
+<text x="79" y="430" font-family="DejaVu Sans, Arial, sans-serif" font-size="28" font-weight="700" fill="#29323f">орон зай.</text>
+<rect x="79" y="452" width="375" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="79" y="464" width="335" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="79" y="482" width="400" height="34" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="92" y="506" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" fill="#29323f">Миний ажлууд</text>
+<rect x="79" y="527" width="400" height="34" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="92" y="551" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="400" fill="#29323f">Хичээлүүд үзэх</text>
+<rect x="60" y="597" width="438" height="166" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="80" y="628" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#29323f">МИНИЙ СОНИРХОЛ</text>
+<text x="80" y="664" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#29323f">01  Веб хөгжүүлэлт</text>
+<text x="80" y="701" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#29323f">02  Программчлал</text>
+<text x="80" y="738" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="400" fill="#29323f">03  Аюулгүй байдал</text>
+<text x="62" y="809" font-family="DejaVu Sans, Arial, sans-serif" font-size="26" font-weight="700" fill="#29323f">Миний хичээлүүд</text>
+<rect x="60" y="831" width="438" height="118" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="79" y="862" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#29323f">01  Веб зохиомж</text>
+<rect x="79" y="886" width="390" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="79" y="898" width="345" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<text x="79" y="931" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#29323f">HTML / CSS / бусад шошго</text>
+<rect x="60" y="965" width="438" height="118" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="79" y="996" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#29323f">02  Өгөгдлийн бүтэц</text>
+<rect x="79" y="1020" width="390" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="79" y="1032" width="345" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<text x="79" y="1065" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#29323f">HTML / CSS / бусад шошго</text>
+<rect x="60" y="1099" width="438" height="118" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="79" y="1130" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#29323f">03  Аюулгүй байдал</text>
+<rect x="79" y="1154" width="390" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="79" y="1166" width="345" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<text x="79" y="1199" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" font-weight="400" fill="#29323f">HTML / CSS / бусад шошго</text>
+<rect x="600" y="199" width="438" height="96" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="233" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#29323f">04  Дискрет бүтэц</text>
+<rect x="619" y="256" width="386" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="619" y="268" width="325" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="600" y="310" width="438" height="96" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="344" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#29323f">05  Мэдээллийн сан</text>
+<rect x="619" y="367" width="386" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="619" y="379" width="325" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="600" y="421" width="438" height="96" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="455" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#29323f">06  Сэтгэл судлал</text>
+<rect x="619" y="478" width="386" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="619" y="490" width="325" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="600" y="549" width="438" height="140" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="580" font-family="DejaVu Sans, Arial, sans-serif" font-size="16" font-weight="700" fill="#29323f">МИНИЙ ТУХАЙ</text>
+<text x="619" y="615" font-family="DejaVu Sans, Arial, sans-serif" font-size="21" font-weight="700" fill="#29323f">Ц.Маргад / B251870025</text>
+<text x="619" y="646" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#29323f">Танилцуулга</text>
+<text x="619" y="673" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#29323f">CV үзэх ↗</text>
+<rect x="600" y="706" width="438" height="95" rx="10" fill="#edf0f4" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="739" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="700" fill="#29323f">САНАМЖ</text>
+<rect x="619" y="759" width="386" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<rect x="619" y="771" width="324" height="4" rx="2" fill="#dde1e7" stroke="#dde1e7" stroke-width="1.4"/>
+<text x="603" y="842" font-family="DejaVu Sans, Arial, sans-serif" font-size="25" font-weight="700" fill="#29323f">Миний хийсэн ажлууд</text>
+<rect x="600" y="862" width="438" height="62" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="900" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#29323f">Лаб 01 / Миний CV</text>
+<rect x="600" y="936" width="438" height="62" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="974" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#29323f">Лаб 02-03 / Бүртгэлийн форм</text>
+<rect x="600" y="1010" width="438" height="62" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="1048" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#29323f">Лаб 04 / Хуудасны зохиомж</text>
+<rect x="600" y="1084" width="438" height="62" rx="10" fill="#ffffff" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="1122" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#29323f">Лаб 05 / Responsive ба wireframe</text>
+<rect x="600" y="1170" width="438" height="65" rx="10" fill="#edf0f4" stroke="#abb3bf" stroke-width="1.4"/>
+<text x="619" y="1196" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#29323f">© 2026 Ц.Маргад</text>
+<text x="619" y="1221" font-family="DejaVu Sans, Arial, sans-serif" font-size="17" font-weight="400" fill="#29323f">Эхлэл рүү ↑</text>
+<text x="42" y="1298" font-family="DejaVu Sans, Arial, sans-serif" font-size="19" font-weight="700" fill="#29323f">Утас: 1 багана  •  Цэс дарахад холбоосууд босоогоор дэлгэгдэнэ.</text>
+<text x="42" y="1330" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#29323f">Цэс нь агуулгыг доош түлхэнэ. Элементүүд давхардахгүй.</text>
+<text x="42" y="1363" font-family="DejaVu Sans, Arial, sans-serif" font-size="18" font-weight="400" fill="#29323f">Таблет: 600-1023 px / 2 багана. Бүх өргөнд хэвтээ скроллгүй.</text>
+</svg>
