@@ -9,8 +9,10 @@
   <link rel="stylesheet" href="style.css">
   <script src="script.js" defer></script>
 </head>
+
 <body id="top">
   <a class="skip-link" href="#main">Үндсэн агуулга руу очих</a>
+
   <header class="site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" aria-label="Агшин — эхлэл">
@@ -21,41 +23,62 @@
         </svg>
         Агшин<span aria-hidden="true">.</span>
       </a>
+
       <div class="header-actions">
         <button class="icon-button" id="theme-toggle" type="button" aria-label="Харанхуй горим" aria-pressed="false" hidden>
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/></svg>
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false">
+            <path d="M20.5 14A8.5 8.5 0 0 1 10 3.5 8.5 8.5 0 1 0 20.5 14Z"/>
+          </svg>
           <span class="theme-label">Dark mode</span>
         </button>
-        <button class="menu-button" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>Цэс <span aria-hidden="true">☰</span></button>
+
+        <button class="menu-button" id="menu-toggle" type="button" aria-controls="site-nav" aria-expanded="false" hidden>
+          Цэс <span aria-hidden="true">☰</span>
+        </button>
       </div>
+
       <nav class="site-nav" id="site-nav" aria-label="Үндсэн цэс">
-        <a href="#gallery">Зургийн цомог</a><a href="#film">Богино видео</a><a href="#map">Газрын зураг</a>
+        <a href="#gallery">Зургийн цомог</a>
+        <a href="#film">Богино видео</a>
+        <a href="#map">Газрын зураг</a>
       </nav>
     </div>
   </header>
+
   <main id="main" tabindex="-1">
     <section class="container hero" aria-labelledby="hero-title">
       <div class="hero-copy">
         <p class="eyebrow">Монгол орноор · Зургийн тэмдэглэл</p>
         <h1 id="hero-title">Агшин бүрд<br><em>нэг түүх.</em></h1>
         <p>Уулсын нам гүмээс хотын үдэш хүртэл.<br>Монгол орны өнгө төрхийг зургаан кадраар мэдрээрэй.</p>
+
         <div class="hero-links">
           <a class="button" href="#gallery">Цомог үзэх <span aria-hidden="true">↗</span></a>
           <a class="text-link" href="#film">18 секундийн аялал</a>
         </div>
+
         <div class="author-line">Ц.Маргадын сургалтын төсөл · Лаб 06</div>
       </div>
+
       <figure class="hero-photo">
         <img src="img/photo1.jpg" alt="Үүлтэй тэнгэр, ногоон уулс бүхий Тэрэлжийн өргөн хөндий" width="1280" height="349" fetchpriority="high" decoding="async">
         <span class="hero-stamp">Онцлох агшин / 01</span>
-        <figcaption><span>Тэрэлж, Монгол</span><a href="https://unsplash.com/photos/On455lczGvM">elbegsaikhan Tsogtbayar ↗</a></figcaption>
+        <figcaption>
+          <span>Тэрэлж, Монгол</span>
+          <a href="https://unsplash.com/photos/On455lczGvM">elbegsaikhan Tsogtbayar ↗</a>
+        </figcaption>
       </figure>
     </section>
+
     <section class="container collection" id="gallery" tabindex="-1" aria-labelledby="gallery-title">
       <div class="section-heading">
-        <div><p class="eyebrow">01 / Цуглуулга</p><h2 id="gallery-title">Сонгосон агшнууд</h2></div>
-        <p class="section-note">Картын ↻ товчийг дарж зургийн арын түүхийг үзээрэй. Гарын Tab, Enter, Space товчоор мөн ажиллана.</p>
+        <div>
+          <p class="eyebrow">01 / Цуглуулга</p>
+          <h2 id="gallery-title">Сонгосон агшнууд</h2>
+        </div>
+        <p class="section-note">Зураг дээр дарж зургийн арын түүхийг үзээрэй. Өөр зураг нээхэд өмнөх нь хаагдана. Гарын Tab, Enter, Space товчоор мөн ажиллана.</p>
       </div>
+
       <div class="gallery-toolbar">
         <div class="filters" role="group" aria-label="Зургийн ангилал" hidden>
           <button class="filter" type="button" data-filter="all" aria-pressed="true">Бүгд</button>
@@ -65,181 +88,249 @@
         </div>
         <p class="gallery-count" id="gallery-count" role="status" aria-live="polite">6 зураг</p>
       </div>
+
       <div class="loading-status" id="loading-status" role="status" aria-live="polite" hidden>
-        <span class="loader" aria-hidden="true"></span><span id="loading-text">Зургууд ачаалж байна…</span>
+        <span class="loader" aria-hidden="true"></span>
+        <span id="loading-text">Зургууд ачаалж байна…</span>
       </div>
-      <noscript><p class="section-note">JavaScript унтраалттай үед зураг, мэдээллийг дараалуулан харуулна.</p></noscript>
+
+      <noscript>
+        <p class="section-note">JavaScript унтраалттай үед зураг, мэдээллийг дараалуулан харуулна.</p>
+      </noscript>
+
       <div class="gallery-grid" id="gallery-grid">
+
         <article class="gallery-card" data-category="nature" style="--i: 0" aria-labelledby="photo-title-1">
           <div class="card-shell">
             <div class="card-scene">
+              <button class="flip-button" type="button" aria-controls="photo-info-1" aria-expanded="false" aria-label="Тэрэлжийн нам гүм: мэдээлэл харах" hidden></button>
+
               <div class="card-inner">
                 <div class="card-face card-front">
                   <img src="img/photo1.jpg" alt="Үүлтэй тэнгэрийн доорх Тэрэлжийн ногоон уулс, хадат энгэр" width="1280" height="349" loading="eager" decoding="async">
-                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Доорх товчоор мэдээллийг үзээрэй.</p>
+                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Энэ хэсэг дээр дарж мэдээллийг үзээрэй.</p>
                   <span class="photo-number" aria-hidden="true">01</span>
                   <span class="photo-category">Байгаль</span>
                 </div>
+
                 <div class="card-face card-back" id="photo-info-1" role="region" aria-label="Тэрэлжийн нам гүм зургийн мэдээлэл">
                   <p class="eyebrow">Зургийн ард</p>
                   <dl>
-                    <dt>Нэр</dt><dd>Тэрэлжийн нам гүм</dd>
-                    <dt>Нийтэлсэн огноо</dt><dd><time datetime="2019-10-17">2019.10.17</time></dd>
-                    <dt>Газар</dt><dd>Тэрэлж, Монгол</dd>
+                    <dt>Нэр</dt>
+                    <dd>Тэрэлжийн нам гүм</dd>
+                    <dt>Нийтэлсэн огноо</dt>
+                    <dd><time datetime="2019-10-17">2019.10.17</time></dd>
+                    <dt>Газар</dt>
+                    <dd>Тэрэлж, Монгол</dd>
                   </dl>
                   <p>Ногоон толгод, хадат оргил, тэнгэрийн зөөлөн хэмнэл.</p>
                   <a class="photo-credit" href="https://unsplash.com/photos/On455lczGvM">Зураг: elbegsaikhan Tsogtbayar ↗</a>
                 </div>
               </div>
             </div>
+
             <div class="card-footer">
-              <div><h3 id="photo-title-1">Тэрэлжийн нам гүм</h3><p>Тэрэлж, Монгол</p></div>
-              <button class="flip-button" type="button" aria-controls="photo-info-1" aria-expanded="false" aria-label="Тэрэлжийн нам гүм: мэдээлэл харах" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M19 7a8 8 0 0 0-13-1L3 9m0 0V3m0 6h6M5 17a8 8 0 0 0 13 1l3-3m0 0v6m0-6h-6"/></svg></button>
+              <div>
+                <h3 id="photo-title-1">Тэрэлжийн нам гүм</h3>
+                <p>Тэрэлж, Монгол</p>
+              </div>
             </div>
           </div>
         </article>
+
         <article class="gallery-card" data-category="nature" style="--i: 1" aria-labelledby="photo-title-2">
           <div class="card-shell">
             <div class="card-scene">
+              <button class="flip-button" type="button" aria-controls="photo-info-2" aria-expanded="false" aria-label="Говийн алтан гэрэл: мэдээлэл харах" hidden></button>
+
               <div class="card-inner">
                 <div class="card-face card-front">
                   <img src="img/photo2.jpg" alt="Нарны зөөлөн гэрэлд туяарах говийн улаан хадат тогтоц" width="1280" height="1920" loading="eager" decoding="async">
-                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Доорх товчоор мэдээллийг үзээрэй.</p>
+                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Энэ хэсэг дээр дарж мэдээллийг үзээрэй.</p>
                   <span class="photo-number" aria-hidden="true">02</span>
                   <span class="photo-category">Байгаль</span>
                 </div>
+
                 <div class="card-face card-back" id="photo-info-2" role="region" aria-label="Говийн алтан гэрэл зургийн мэдээлэл">
                   <p class="eyebrow">Зургийн ард</p>
                   <dl>
-                    <dt>Нэр</dt><dd>Говийн алтан гэрэл</dd>
-                    <dt>Нийтэлсэн огноо</dt><dd><time datetime="2018-09-17">2018.09.17</time></dd>
-                    <dt>Газар</dt><dd>Говь, Булган, Монгол</dd>
+                    <dt>Нэр</dt>
+                    <dd>Говийн алтан гэрэл</dd>
+                    <dt>Нийтэлсэн огноо</dt>
+                    <dd><time datetime="2018-09-17">2018.09.17</time></dd>
+                    <dt>Газар</dt>
+                    <dd>Говь, Булган, Монгол</dd>
                   </dl>
                   <p>Гэрэл сүүдэр ээлжлэхэд говийн хад өөр өнгөөр харагдана.</p>
                   <a class="photo-credit" href="https://unsplash.com/photos/oe796n6M1k8">Зураг: Patrick Rosenberger (Schneider) ↗</a>
                 </div>
               </div>
             </div>
+
             <div class="card-footer">
-              <div><h3 id="photo-title-2">Говийн алтан гэрэл</h3><p>Говь, Булган, Монгол</p></div>
-              <button class="flip-button" type="button" aria-controls="photo-info-2" aria-expanded="false" aria-label="Говийн алтан гэрэл: мэдээлэл харах" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M19 7a8 8 0 0 0-13-1L3 9m0 0V3m0 6h6M5 17a8 8 0 0 0 13 1l3-3m0 0v6m0-6h-6"/></svg></button>
+              <div>
+                <h3 id="photo-title-2">Говийн алтан гэрэл</h3>
+                <p>Говь, Булган, Монгол</p>
+              </div>
             </div>
           </div>
         </article>
+
         <article class="gallery-card" data-category="culture" style="--i: 2" aria-labelledby="photo-title-3">
           <div class="card-shell">
             <div class="card-scene">
+              <button class="flip-button" type="button" aria-controls="photo-info-3" aria-expanded="false" aria-label="Алтайн бэлд: мэдээлэл харах" hidden></button>
+
               <div class="card-inner">
                 <div class="card-face card-front">
                   <img src="img/photo3.jpg" alt="Цаст Алтайн нурууны өмнөх талд байрлах гэрүүд" width="1280" height="720" loading="eager" decoding="async">
-                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Доорх товчоор мэдээллийг үзээрэй.</p>
+                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Энэ хэсэг дээр дарж мэдээллийг үзээрэй.</p>
                   <span class="photo-number" aria-hidden="true">03</span>
                   <span class="photo-category">Ахуй</span>
                 </div>
+
                 <div class="card-face card-back" id="photo-info-3" role="region" aria-label="Алтайн бэлд зургийн мэдээлэл">
                   <p class="eyebrow">Зургийн ард</p>
                   <dl>
-                    <dt>Нэр</dt><dd>Алтайн бэлд</dd>
-                    <dt>Нийтэлсэн огноо</dt><dd><time datetime="2025-03-17">2025.03.17</time></dd>
-                    <dt>Газар</dt><dd>Алтайн нуруу, Монгол</dd>
+                    <dt>Нэр</dt>
+                    <dd>Алтайн бэлд</dd>
+                    <dt>Нийтэлсэн огноо</dt>
+                    <dd><time datetime="2025-03-17">2025.03.17</time></dd>
+                    <dt>Газар</dt>
+                    <dd>Алтайн нуруу, Монгол</dd>
                   </dl>
                   <p>Цаст уулсын бэл дэх гэрүүд, хязгааргүй мэт орон зай.</p>
                   <a class="photo-credit" href="https://unsplash.com/photos/oUPPmOlJkK8">Зураг: Fadhil Abhimantra ↗</a>
                 </div>
               </div>
             </div>
+
             <div class="card-footer">
-              <div><h3 id="photo-title-3">Алтайн бэлд</h3><p>Алтайн нуруу, Монгол</p></div>
-              <button class="flip-button" type="button" aria-controls="photo-info-3" aria-expanded="false" aria-label="Алтайн бэлд: мэдээлэл харах" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M19 7a8 8 0 0 0-13-1L3 9m0 0V3m0 6h6M5 17a8 8 0 0 0 13 1l3-3m0 0v6m0-6h-6"/></svg></button>
+              <div>
+                <h3 id="photo-title-3">Алтайн бэлд</h3>
+                <p>Алтайн нуруу, Монгол</p>
+              </div>
             </div>
           </div>
         </article>
+
         <article class="gallery-card" data-category="nature" style="--i: 3" aria-labelledby="photo-title-4">
           <div class="card-shell">
             <div class="card-scene">
+              <button class="flip-button" type="button" aria-controls="photo-info-4" aria-expanded="false" aria-label="Хотонгийн эрэг: мэдээлэл харах" hidden></button>
+
               <div class="card-inner">
                 <div class="card-face card-front">
                   <img src="img/photo4.jpg" alt="Хотон нуурын усны дэргэдэх ногоон болон шар модод" width="1280" height="853" loading="lazy" decoding="async">
-                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Доорх товчоор мэдээллийг үзээрэй.</p>
+                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Энэ хэсэг дээр дарж мэдээллийг үзээрэй.</p>
                   <span class="photo-number" aria-hidden="true">04</span>
                   <span class="photo-category">Байгаль</span>
                 </div>
+
                 <div class="card-face card-back" id="photo-info-4" role="region" aria-label="Хотонгийн эрэг зургийн мэдээлэл">
                   <p class="eyebrow">Зургийн ард</p>
                   <dl>
-                    <dt>Нэр</dt><dd>Хотонгийн эрэг</dd>
-                    <dt>Нийтэлсэн огноо</dt><dd><time datetime="2021-07-16">2021.07.16</time></dd>
-                    <dt>Газар</dt><dd>Хотон нуур, Монгол</dd>
+                    <dt>Нэр</dt>
+                    <dd>Хотонгийн эрэг</dd>
+                    <dt>Нийтэлсэн огноо</dt>
+                    <dd><time datetime="2021-07-16">2021.07.16</time></dd>
+                    <dt>Газар</dt>
+                    <dd>Хотон нуур, Монгол</dd>
                   </dl>
                   <p>Нуурын эрэг дагуух модод, усны өнгөний тайван зохицол.</p>
                   <a class="photo-credit" href="https://unsplash.com/photos/wzQvBSc5Cfo">Зураг: Ariungoo Batzorig ↗</a>
                 </div>
               </div>
             </div>
+
             <div class="card-footer">
-              <div><h3 id="photo-title-4">Хотонгийн эрэг</h3><p>Хотон нуур, Монгол</p></div>
-              <button class="flip-button" type="button" aria-controls="photo-info-4" aria-expanded="false" aria-label="Хотонгийн эрэг: мэдээлэл харах" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M19 7a8 8 0 0 0-13-1L3 9m0 0V3m0 6h6M5 17a8 8 0 0 0 13 1l3-3m0 0v6m0-6h-6"/></svg></button>
+              <div>
+                <h3 id="photo-title-4">Хотонгийн эрэг</h3>
+                <p>Хотон нуур, Монгол</p>
+              </div>
             </div>
           </div>
         </article>
+
         <article class="gallery-card" data-category="city" style="--i: 4" aria-labelledby="photo-title-5">
           <div class="card-shell">
             <div class="card-scene">
+              <button class="flip-button" type="button" aria-controls="photo-info-5" aria-expanded="false" aria-label="Хотын үдэш: мэдээлэл харах" hidden></button>
+
               <div class="card-inner">
                 <div class="card-face card-front">
                   <img src="img/photo5.jpg" alt="Нар жаргах үеийн Улаанбаатарын барилгууд, алсын уулс" width="1280" height="853" loading="lazy" decoding="async">
-                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Доорх товчоор мэдээллийг үзээрэй.</p>
+                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Энэ хэсэг дээр дарж мэдээллийг үзээрэй.</p>
                   <span class="photo-number" aria-hidden="true">05</span>
                   <span class="photo-category">Хот</span>
                 </div>
+
                 <div class="card-face card-back" id="photo-info-5" role="region" aria-label="Хотын үдэш зургийн мэдээлэл">
                   <p class="eyebrow">Зургийн ард</p>
                   <dl>
-                    <dt>Нэр</dt><dd>Хотын үдэш</dd>
-                    <dt>Нийтэлсэн огноо</dt><dd><time datetime="2024-03-31">2024.03.31</time></dd>
-                    <dt>Газар</dt><dd>Улаанбаатар, Монгол</dd>
+                    <dt>Нэр</dt>
+                    <dd>Хотын үдэш</dd>
+                    <dt>Нийтэлсэн огноо</dt>
+                    <dd><time datetime="2024-03-31">2024.03.31</time></dd>
+                    <dt>Газар</dt>
+                    <dd>Улаанбаатар, Монгол</dd>
                   </dl>
                   <p>Уулсын дундах хотыг үдшийн дулаан гэрэл тэвэрнэ.</p>
                   <a class="photo-credit" href="https://unsplash.com/photos/3_II4AdO19Q">Зураг: Bree Evans ↗</a>
                 </div>
               </div>
             </div>
+
             <div class="card-footer">
-              <div><h3 id="photo-title-5">Хотын үдэш</h3><p>Улаанбаатар, Монгол</p></div>
-              <button class="flip-button" type="button" aria-controls="photo-info-5" aria-expanded="false" aria-label="Хотын үдэш: мэдээлэл харах" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M19 7a8 8 0 0 0-13-1L3 9m0 0V3m0 6h6M5 17a8 8 0 0 0 13 1l3-3m0 0v6m0-6h-6"/></svg></button>
+              <div>
+                <h3 id="photo-title-5">Хотын үдэш</h3>
+                <p>Улаанбаатар, Монгол</p>
+              </div>
             </div>
           </div>
         </article>
+
         <article class="gallery-card" data-category="culture" style="--i: 5" aria-labelledby="photo-title-6">
           <div class="card-shell">
             <div class="card-scene">
+              <button class="flip-button" type="button" aria-controls="photo-info-6" aria-expanded="false" aria-label="Гол гатлах агшин: мэдээлэл харах" hidden></button>
+
               <div class="card-inner">
                 <div class="card-face card-front">
                   <img src="img/photo6.jpg" alt="Алтайн нуруунд гол гаталж буй морьтон хүмүүс" width="1280" height="960" loading="lazy" decoding="async">
-                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Доорх товчоор мэдээллийг үзээрэй.</p>
+                  <p class="image-fallback" hidden>Зураг ачаалагдсангүй. Энэ хэсэг дээр дарж мэдээллийг үзээрэй.</p>
                   <span class="photo-number" aria-hidden="true">06</span>
                   <span class="photo-category">Ахуй</span>
                 </div>
+
                 <div class="card-face card-back" id="photo-info-6" role="region" aria-label="Гол гатлах агшин зургийн мэдээлэл">
                   <p class="eyebrow">Зургийн ард</p>
                   <dl>
-                    <dt>Нэр</dt><dd>Гол гатлах агшин</dd>
-                    <dt>Нийтэлсэн огноо</dt><dd><time datetime="2024-03-22">2024.03.22</time></dd>
-                    <dt>Газар</dt><dd>Алтайн нуруу, Монгол</dd>
+                    <dt>Нэр</dt>
+                    <dd>Гол гатлах агшин</dd>
+                    <dt>Нийтэлсэн огноо</dt>
+                    <dd><time datetime="2024-03-22">2024.03.22</time></dd>
+                    <dt>Газар</dt>
+                    <dd>Алтайн нуруу, Монгол</dd>
                   </dl>
                   <p>Ус, уул, морьтон хүмүүсийн аяллын нэгэн агшин.</p>
                   <a class="photo-credit" href="https://unsplash.com/photos/PApkYMKjgHk">Зураг: Fadhil Abhimantra ↗</a>
                 </div>
               </div>
             </div>
+
             <div class="card-footer">
-              <div><h3 id="photo-title-6">Гол гатлах агшин</h3><p>Алтайн нуруу, Монгол</p></div>
-              <button class="flip-button" type="button" aria-controls="photo-info-6" aria-expanded="false" aria-label="Гол гатлах агшин: мэдээлэл харах" hidden><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true" focusable="false"><path d="M19 7a8 8 0 0 0-13-1L3 9m0 0V3m0 6h6M5 17a8 8 0 0 0 13 1l3-3m0 0v6m0-6h-6"/></svg></button>
+              <div>
+                <h3 id="photo-title-6">Гол гатлах агшин</h3>
+                <p>Алтайн нуруу, Монгол</p>
+              </div>
             </div>
           </div>
         </article>
+
       </div>
     </section>
+
     <section class="container media-section" id="film" tabindex="-1" aria-labelledby="film-title">
       <div class="media-grid">
         <div class="media-copy">
@@ -247,8 +338,14 @@
           <h2 id="film-title">Түр саатаад,<br>Монголыг мэдэр.</h2>
           <p>Цомгийн зургаан зургийг нэгтгэсэн богино, дуугүй эвлүүлэг. Тоглуулах товчийг дараад аяллаа эхлүүлээрэй.</p>
           <p>CC буюу хадмалын цэснээс <strong>Монгол</strong> тайлбарыг сонгож болно.</p>
-          <div class="media-meta"><span>18 секунд</span><span>Монгол хадмал</span><span>Дуугүй видео</span></div>
+
+          <div class="media-meta">
+            <span>18 секунд</span>
+            <span>Монгол хадмал</span>
+            <span>Дуугүй видео</span>
+          </div>
         </div>
+
         <div>
           <video controls playsinline preload="none" poster="img/photo1.jpg" aria-label="Монгол орон — 18 секундийн зурган эвлүүлэг" aria-describedby="video-description">
             <source src="video/clip.mp4" type="video/mp4">
@@ -256,48 +353,65 @@
             <track kind="captions" src="video/clip.mn.vtt" srclang="mn" label="Монгол" default>
             Таны хөтөч видеог дэмжихгүй байна. <a href="video/clip.mp4">Видеог татах</a>.
           </video>
+
           <p class="video-caption" id="video-description">Зураг тус бүр 3 секунд харагдана. Яриа болон хөгжим агуулаагүй.</p>
-          <details class="transcript"><summary>Видеоны бичгэн тайлбар</summary><ol>
+
+          <details class="transcript">
+            <summary>Видеоны бичгэн тайлбар</summary>
+            <ol>
               <li>00–03 сек: Үүлтэй тэнгэрийн доорх Тэрэлжийн ногоон уулс, хадат энгэр.</li>
               <li>03–06 сек: Нарны зөөлөн гэрэлд туяарах говийн улаан хадат тогтоц.</li>
               <li>06–09 сек: Цаст Алтайн нурууны өмнөх талд байрлах гэрүүд.</li>
               <li>09–12 сек: Хотон нуурын усны дэргэдэх ногоон болон шар модод.</li>
               <li>12–15 сек: Нар жаргах үеийн Улаанбаатарын барилгууд, алсын уулс.</li>
               <li>15–18 сек: Алтайн нуруунд гол гаталж буй морьтон хүмүүс.</li>
-          </ol></details>
+            </ol>
+          </details>
         </div>
       </div>
     </section>
+
     <section class="container media-section" id="map" tabindex="-1" aria-labelledby="map-title">
       <div class="media-grid">
         <div class="media-copy">
           <p class="eyebrow">03 / Байршил</p>
           <h2 id="map-title">Кадрын цаана<br>бодит газар бий.</h2>
           <p>Онцлох зургийн газар болох Тэрэлжийн орчмыг газрын зураг дээрээс сонирхоорой. Тэмдэглэгээ нь бүсийн ерөнхий байршил юм.</p>
-          <a class="text-link" href="https://www.openstreetmap.org/?mlat=47.985&amp;mlon=107.47#map=11/47.985/107.47" target="_blank" rel="noopener noreferrer">Том газрын зураг нээх ↗<span class="sr-only"> — шинэ цонх</span></a>
+          <a class="text-link" href="https://www.openstreetmap.org/?mlat=47.985&amp;mlon=107.47#map=11/47.985/107.47" target="_blank" rel="noopener noreferrer">
+            Том газрын зураг нээх ↗
+            <span class="sr-only"> — шинэ цонх</span>
+          </a>
         </div>
+
         <div>
           <iframe class="map-frame" title="Тэрэлж орчмын OpenStreetMap газрын зураг" src="https://www.openstreetmap.org/export/embed.html?bbox=107.25%2C47.85%2C107.69%2C48.12&amp;layer=mapnik&amp;marker=47.985%2C107.47" loading="lazy" referrerpolicy="no-referrer" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
           <p class="map-note">Газрын зураг: © OpenStreetMap contributors. Интернет шаардлагатай. Ачаалахгүй бол дээрх холбоосоор нээнэ үү.</p>
         </div>
       </div>
     </section>
+
     <section class="container about" aria-labelledby="about-title">
       <h2 id="about-title">Энэ цомгийн тухай</h2>
       <p>Ц.Маргадын Веб зохиомж хичээлийн лаборатори 6. Байгаль, хот, ахуйн өнгө төрхийг сонгон нэгтгэсэн сургалтын цомог. Зургуудыг доорх гэрэл зурагчид бүтээсэн; огноо нь Unsplash-д нийтэлсэн огноо болно.</p>
-      <details class="credits"><summary>Гэрэл зурагчид ба эх сурвалж</summary>
+
+      <details class="credits">
+        <summary>Гэрэл зурагчид ба эх сурвалж</summary>
         <p>Зургуудыг <a href="https://unsplash.com/license">Unsplash License</a>-ийн дагуу ашиглав. Хэмжээг багасгаж, карт дээр хүрээнд тааруулан харуулсан. Видео нь эдгээр зургаар хийсэн эвлүүлэг.</p>
         <ol>
-              <li><a href="https://unsplash.com/photos/On455lczGvM">Тэрэлжийн нам гүм</a> — elbegsaikhan Tsogtbayar. Unsplash, 2019-10-17.</li>
-              <li><a href="https://unsplash.com/photos/oe796n6M1k8">Говийн алтан гэрэл</a> — Patrick Rosenberger (Schneider). Unsplash, 2018-09-17.</li>
-              <li><a href="https://unsplash.com/photos/oUPPmOlJkK8">Алтайн бэлд</a> — Fadhil Abhimantra. Unsplash, 2025-03-17.</li>
-              <li><a href="https://unsplash.com/photos/wzQvBSc5Cfo">Хотонгийн эрэг</a> — Ariungoo Batzorig. Unsplash, 2021-07-16.</li>
-              <li><a href="https://unsplash.com/photos/3_II4AdO19Q">Хотын үдэш</a> — Bree Evans. Unsplash, 2024-03-31.</li>
-              <li><a href="https://unsplash.com/photos/PApkYMKjgHk">Гол гатлах агшин</a> — Fadhil Abhimantra. Unsplash, 2024-03-22.</li>
+          <li><a href="https://unsplash.com/photos/On455lczGvM">Тэрэлжийн нам гүм</a> — elbegsaikhan Tsogtbayar. Unsplash, 2019-10-17.</li>
+          <li><a href="https://unsplash.com/photos/oe796n6M1k8">Говийн алтан гэрэл</a> — Patrick Rosenberger (Schneider). Unsplash, 2018-09-17.</li>
+          <li><a href="https://unsplash.com/photos/oUPPmOlJkK8">Алтайн бэлд</a> — Fadhil Abhimantra. Unsplash, 2025-03-17.</li>
+          <li><a href="https://unsplash.com/photos/wzQvBSc5Cfo">Хотонгийн эрэг</a> — Ariungoo Batzorig. Unsplash, 2021-07-16.</li>
+          <li><a href="https://unsplash.com/photos/3_II4AdO19Q">Хотын үдэш</a> — Bree Evans. Unsplash, 2024-03-31.</li>
+          <li><a href="https://unsplash.com/photos/PApkYMKjgHk">Гол гатлах агшин</a> — Fadhil Abhimantra. Unsplash, 2024-03-22.</li>
         </ol>
       </details>
     </section>
   </main>
-  <footer class="container footer-inner"><p>Агшин. · Ц.Маргад · 2026</p><a href="#top">Эхлэл рүү ↑</a></footer>
+
+  <footer class="container footer-inner">
+    <p>Агшин. · Ц.Маргад · 2026</p>
+    <a href="#top">Эхлэл рүү ↑</a>
+  </footer>
 </body>
 </html>
