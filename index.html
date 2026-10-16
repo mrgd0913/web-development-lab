@@ -2,14 +2,163 @@
 <html lang="mn">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Миний лабораториуд</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 40px 16px;
+      background-color: #f0f4f8;
+      color: #253449;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 620px;
+      margin: 0 auto;
+      padding: 32px;
+      background-color: white;
+      border: 1px solid #e0e7ef;
+      border-radius: 18px;
+      box-shadow: 0 8px 28px rgba(37, 52, 73, 0.06);
+    }
+
+    .label {
+      margin: 0 0 8px;
+      color: #426b9b;
+      font-size: 14px;
+      font-weight: bold;
+    }
+
+    h1 {
+      margin: 0 0 12px;
+      font-size: 28px;
+      line-height: 1.3;
+    }
+
+    .intro {
+      margin: 0 0 28px;
+      color: #64748b;
+      font-size: 15px;
+    }
+
+    .labs {
+      display: grid;
+      gap: 12px;
+    }
+
+    .lab {
+      display: block;
+      padding: 16px 20px;
+      border: 1px solid #dce5ef;
+      border-radius: 12px;
+      background-color: #f8fafc;
+      color: #253449;
+      text-decoration: none;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .lab:hover {
+      background-color: #edf4fc;
+      border-color: #8cadd2;
+    }
+
+    .lab:focus-visible {
+      outline: 3px solid #426b9b;
+      outline-offset: 3px;
+    }
+
+    .lab strong {
+      display: block;
+      color: #355f8e;
+      font-size: 17px;
+    }
+
+    .lab span {
+      display: block;
+      margin-top: 3px;
+      color: #64748b;
+      font-size: 14px;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid #e0e7ef;
+      color: #64748b;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 12px;
+      }
+
+      .container {
+        padding: 24px 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .lab {
+        transition: none;
+      }
+    }
+  </style>
 </head>
+
 <body>
-  <h1>Вэб хөгжүүлэлтийн лаборатори</h1>
-  <a href="lab%201/">Лаб 1</a>
-  <a href="lab02,3/">Лаб 2, 3</a>
-  <a href="lab4/">Лаб 4</a>
-  <a href="lab5/">Лаб 5</a>
-  <a href="lab6/">Лаб 6</a>
+  <main class="container">
+    <p class="label">Ц.Маргад · B251870025</p>
+
+    <h1>Вэб хөгжүүлэлтийн лаборатори</h1>
+
+    <p class="intro">
+      Миний хийсэн лабораторийн ажлууд.
+      Үзэх ажлаа доороос сонгоорой.
+    </p>
+
+    <nav class="labs" aria-label="Лабораторийн ажлууд">
+      <a class="lab" href="lab%201/">
+        <strong>Лаборатори 1</strong>
+        <span>Миний товч CV</span>
+      </a>
+
+      <a class="lab" href="lab02,3/">
+        <strong>Лаборатори 2, 3</strong>
+        <span>Бүртгэлийн форм болон CSS загварчлал</span>
+      </a>
+
+      <a class="lab" href="lab4/">
+        <strong>Лаборатори 4</strong>
+        <span>Grid ашигласан зургийн цомог</span>
+      </a>
+
+      <a class="lab" href="lab5/">
+        <strong>Лаборатори 5</strong>
+        <span>Responsive вэб хуудас ба Wireframe</span>
+      </a>
+
+      <a class="lab" href="lab6/">
+        <strong>Лаборатори 6</strong>
+        <span>Анимэйшн, мультимедиа бүхий зургийн цомог</span>
+      </a>
+    </nav>
+
+    <footer>
+      2026 · Вэб зохиомж хичээл
+    </footer>
+  </main>
 </body>
 </html>
