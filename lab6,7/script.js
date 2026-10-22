@@ -12,7 +12,6 @@ try {
     savedTheme = value;
   }
 } catch {
-  // Хадгалсан горимыг унших боломжгүй үед системийн горимыг ашиглана.
 }
 
 function applyTheme(theme) {
@@ -31,7 +30,6 @@ themeButton.addEventListener("click", () => {
   try {
     localStorage.setItem("agshin-theme", savedTheme);
   } catch {
-    // Хадгалах боломжгүй байсан ч горим солигдоно.
   }
 });
 
@@ -46,17 +44,17 @@ const navigation = document.querySelector("#site-nav");
 const wideScreen = window.matchMedia("(min-width: 800px)");
 
 function closeMenu() {
-  navigation.classList.remove("is-open");
+  navigation.classList.remove("site-nav--open");
   menuButton.setAttribute("aria-expanded", "false");
 }
 
 menuButton.hidden = false;
-root.classList.add("nav-enhanced");
+root.classList.add("page--nav-ready");
 
 menuButton.addEventListener("click", () => {
   const expanded = menuButton.getAttribute("aria-expanded") === "true";
 
-  navigation.classList.toggle("is-open", !expanded);
+  navigation.classList.toggle("site-nav--open", !expanded);
   menuButton.setAttribute("aria-expanded", String(!expanded));
 });
 
@@ -86,9 +84,9 @@ wideScreen.addEventListener("change", closeMenu);
 const cards = [...document.querySelectorAll(".gallery-card")];
 
 function flipCard(card, flipped, restoreFocus = true) {
-  const front = card.querySelector(".card-front");
-  const back = card.querySelector(".card-back");
-  const button = card.querySelector(".flip-button");
+  const front = card.querySelector(".gallery-card__face--front");
+  const back = card.querySelector(".gallery-card__face--back");
+  const button = card.querySelector(".gallery-card__toggle");
   const title = card.querySelector("h3").textContent;
 
   if (
@@ -99,7 +97,7 @@ function flipCard(card, flipped, restoreFocus = true) {
     button.focus({ preventScroll: true });
   }
 
-  card.classList.toggle("is-flipped", flipped);
+  card.classList.toggle("gallery-card--flipped", flipped);
 
   front.setAttribute("aria-hidden", String(flipped));
   front.inert = flipped;
@@ -115,33 +113,30 @@ function flipCard(card, flipped, restoreFocus = true) {
 }
 
 function toggleCard(card) {
-  const opening = !card.classList.contains("is-flipped");
+  const opening = !card.classList.contains("gallery-card--flipped");
 
-  // Өөр карт нээхэд өмнө нь нээлттэй байсан картыг хаана.
   if (opening) {
     cards.forEach((other) => {
       if (
         other !== card &&
-        other.classList.contains("is-flipped")
+        other.classList.contains("gallery-card--flipped")
       ) {
         flipCard(other, false, false);
       }
     });
   }
 
-  // Нээлттэй картаа дахин дарвал буцааж хаана.
   flipCard(card, opening);
-  card.querySelector(".flip-button").focus({ preventScroll: true });
+  card.querySelector(".gallery-card__toggle").focus({ preventScroll: true });
 }
 
 cards.forEach((card) => {
-  const button = card.querySelector(".flip-button");
+  const button = card.querySelector(".gallery-card__toggle");
 
   flipCard(card, false);
-  card.classList.add("can-flip");
+  card.classList.add("gallery-card--ready");
   button.hidden = false;
 
-  // Зургийн талбай дээр дарахад ажиллана.
   button.addEventListener("click", () => {
     toggleCard(card);
   });
@@ -149,7 +144,7 @@ cards.forEach((card) => {
   card.addEventListener("keydown", (event) => {
     if (
       event.key === "Escape" &&
-      card.classList.contains("is-flipped")
+      card.classList.contains("gallery-card--flipped")
     ) {
       flipCard(card, false);
       button.focus();
@@ -158,17 +153,17 @@ cards.forEach((card) => {
 });
 
 const gallery = document.querySelector("#gallery-grid");
-const filters = [...document.querySelectorAll(".filter")];
+const filters = [...document.querySelectorAll(".gallery__filter")];
 const count = document.querySelector("#gallery-count");
 
-document.querySelector(".filters").hidden = false;
+document.querySelector(".gallery__filters").hidden = false;
 
 filters.forEach((button) => {
   button.addEventListener("click", () => {
     const selected = button.dataset.filter;
     let index = 0;
 
-    gallery.classList.remove("is-ready");
+    gallery.classList.remove("gallery__grid--loaded");
 
     filters.forEach((item) => {
       item.setAttribute("aria-pressed", String(item === button));
@@ -190,7 +185,7 @@ filters.forEach((button) => {
 
     requestAnimationFrame(() => {
       requestAnimationFrame(() => {
-        gallery.classList.add("is-ready");
+        gallery.classList.add("gallery__grid--loaded");
       });
     });
   });
@@ -218,10 +213,10 @@ function waitForImage(image) {
   });
 }
 
-document.querySelectorAll(".card-front img").forEach((image) => {
+document.querySelectorAll(".gallery-card__face--front img").forEach((image) => {
   const showError = () => {
     image.hidden = true;
-    image.parentElement.querySelector(".image-fallback").hidden = false;
+    image.parentElement.querySelector(".gallery-card__fallback").hidden = false;
   };
 
   image.addEventListener("error", showError, { once: true });
@@ -248,7 +243,7 @@ Promise.race([
   window.clearTimeout(timeoutId);
 
   gallery.setAttribute("aria-busy", "false");
-  gallery.classList.add("is-ready");
+  gallery.classList.add("gallery__grid--loaded");
 
   if (results && results.every(Boolean)) {
     statusText.textContent = "Зургууд бэлэн боллоо.";

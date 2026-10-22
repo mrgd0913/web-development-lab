@@ -1,0 +1,10 @@
+@use "tokens" as t;
+
+@each $name, $value in t.$spacing {
+  .u-mb-#{$name} { margin-bottom: $value; }
+  .u-gap-#{$name} { gap: $value; }
+}
+
+@each $name, $value in t.$text-utilities {
+  .u-text-#{$name} { color: $value; }
+}

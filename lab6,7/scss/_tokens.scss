@@ -1,0 +1,36 @@
+@use "functions" as f;
+
+$colors: (
+  "bg": #e4e4ea, "surface": #ffffff, "surface-soft": #e9ede5,
+  "text": #22352b, "muted": #59665e, "line": #c9d1c8,
+  "accent": #2d5942, "accent-text": f.contrast(#2d5942), "focus": #b05021,
+  "image-ink": #ffffff, "image-overlay": #13271e,
+  "caption-text": #ffffff, "caption-bg": #14271be6
+);
+
+$dark-colors: ( 
+  "bg": #121d18, "surface": #1b2b22, "surface-soft": #263b2e,
+  "text": #f0f3ea, "muted": #b6c6b8, "line": #415549,
+  "accent": #bad5a6, "accent-text": f.contrast(#bad5a6), "focus": #ffbf82
+);
+
+$radii: (
+  "radius-sm": f.rem(10.4px), "radius": f.rem(20px), "radius-lg": f.rem(32px),
+  "radius-pill": 999px, "radius-circle": 50%,
+  "radius-nav": 22px, "radius-nav-link": 14px
+);
+
+$breakpoints: (
+  "compact": 359px, "tablet": 600px, "mobile": 799px,
+  "wide": 800px, "desktop": 1100px
+);
+
+$motion: (
+  "duration-fast": 180ms, "duration": 320ms, "duration-flip": 650ms,
+  "duration-enter": 620ms, "duration-loader": 900ms, "stagger": 85ms,
+  "ease": cubic-bezier(.2, .7, .2, 1)
+);
+
+$shadows: ("light": 0 16px 40px #122e1d14, "dark": 0 16px 40px #00000030);
+$spacing: ("0": 0, "1": f.rem(4px), "2": f.rem(8px), "3": f.rem(12px), "4": f.rem(16px));
+$text-utilities: ("muted": var(--muted), "accent": var(--accent), "default": var(--text));
