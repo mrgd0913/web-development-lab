@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ц.Маргад | Миний лабораториуд</title>
+  <title>Миний лабораториуд</title>
+
   <style>
     * {
       box-sizing: border-box;
@@ -11,135 +12,156 @@
 
     body {
       margin: 0;
-      background: #f5f7f5;
-      color: #243b30;
+      padding: 40px 16px;
+      background-color: #f0f4f8;
+      color: #253449;
       font-family: Arial, sans-serif;
       line-height: 1.6;
     }
 
-    main {
-      max-width: 1000px;
+    .container {
+      max-width: 620px;
       margin: 0 auto;
-      padding: 60px 20px;
-    }
-
-    .name {
-      color: #537563;
-      font-size: 14px;
-      letter-spacing: 2px;
-    }
-
-    h1 {
-      margin: 10px 0;
-      font-size: clamp(28px, 5vw, 42px);
-    }
-
-    .description {
-      margin-bottom: 32px;
-      color: #66756d;
-    }
-
-    .lab-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)));
-      gap: 20px;
-    }
-
-    .lab-card {
-      display: block;
-      padding: 26px;
-      border: 1px solid #dce5de;
+      padding: 32px;
+      background-color: white;
+      border: 1px solid #e0e7ef;
       border-radius: 18px;
-      background: #ffffff;
-      color: inherit;
-      text-decoration: none;
-      transition: transform 0.2s, border-color 0.2s;
+      box-shadow: 0 8px 28px rgba(37, 52, 73, 0.06);
     }
 
-    .lab-card:hover {
-      transform: translateY(-4px);
-      border-color: #537563;
-    }
-
-    .lab-card:focus-visible {
-      outline: 3px solid #537563;
-      outline-offset: 4px;
-    }
-
-    .lab-number {
-      color: #537563;
-      font-size: 13px;
+    .label {
+      margin: 0 0 8px;
+      color: #426b9b;
+      font-size: 14px;
       font-weight: bold;
     }
 
-    .lab-card h2 {
-      margin: 12px 0 8px;
-      font-size: 22px;
+    h1 {
+      margin: 0 0 12px;
+      font-size: 28px;
+      line-height: 1.3;
     }
 
-    .lab-card p {
-      margin: 0;
-      color: #66756d;
+    .intro {
+      margin: 0 0 28px;
+      color: #64748b;
       font-size: 15px;
     }
 
-    footer {
-      margin-top: 40px;
-      padding-top: 20px;
-      border-top: 1px solid #dce5de;
-      color: #66756d;
+    .labs {
+      display: grid;
+      gap: 12px;
+    }
+
+    .lab {
+      display: block;
+      padding: 16px 20px;
+      border: 1px solid #dce5ef;
+      border-radius: 12px;
+      background-color: #f8fafc;
+      color: #253449;
+      text-decoration: none;
+      transition: background-color 0.2s, border-color 0.2s;
+    }
+
+    .lab:hover {
+      background-color: #edf4fc;
+      border-color: #8cadd2;
+    }
+
+    .lab:focus-visible {
+      outline: 3px solid #426b9b;
+      outline-offset: 3px;
+    }
+
+    .lab strong {
+      display: block;
+      color: #355f8e;
+      font-size: 17px;
+    }
+
+    .lab span {
+      display: block;
+      margin-top: 3px;
+      color: #64748b;
       font-size: 14px;
+    }
+
+    footer {
+      margin-top: 28px;
+      padding-top: 18px;
+      border-top: 1px solid #e0e7ef;
+      color: #64748b;
+      font-size: 13px;
+      text-align: center;
+    }
+
+    @media (max-width: 480px) {
+      body {
+        padding: 20px 12px;
+      }
+
+      .container {
+        padding: 24px 18px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .lab {
+        transition: none;
+      }
     }
   </style>
 </head>
+
 <body>
-  <main>
-    <header>
-      <p class="name">Ц.МАРГАД · B251870025</p>
-      <h1>Веб зохиомжийн лабораториуд</h1>
-      <p class="description">Хичээлээр хийсэн ажлуудын цуглуулга.</p>
-    </header>
+  <main class="container">
+    <p class="label">Ц.Маргад · B251870025</p>
 
-    <nav class="lab-grid" aria-label="Лабораторийн ажлууд">
-      <a class="lab-card" href="lab%201/">
-        <span class="lab-number">ЛАБ 01</span>
-        <h2>Миний CV</h2>
-        <p>Танилцуулга, чадвар, сонирхол</p>
+    <h1>Вэб хөгжүүлэлтийн лаборатори</h1>
+
+    <p class="intro">
+      Миний хийсэн лабораторийн ажлууд.
+      Үзэх ажлаа доороос сонгоорой.
+    </p>
+
+    <nav class="labs" aria-label="Лабораторийн ажлууд">
+      <a class="lab" href="lab%201/">
+        <strong>Лаборатори 1</strong>
+        <span>Миний товч CV</span>
       </a>
 
-      <a class="lab-card" href="lab02,3/">
-        <span class="lab-number">ЛАБ 02–03</span>
-        <h2>Бүртгэлийн форм</h2>
-        <p>Semantic HTML ба CSS загвар</p>
+      <a class="lab" href="lab02,3/">
+        <strong>Лаборатори 2, 3</strong>
+        <span>Бүртгэлийн форм болон CSS загварчлал</span>
       </a>
 
-      <a class="lab-card" href="lab4/">
-        <span class="lab-number">ЛАБ 04</span>
-        <h2>Хуудасны зохиомж</h2>
-        <p>Flexbox ба CSS Grid</p>
+      <a class="lab" href="lab4/">
+        <strong>Лаборатори 4</strong>
+        <span>Grid ашигласан зургийн цомог</span>
       </a>
 
-      <a class="lab-card" href="lab5/">
-        <span class="lab-number">ЛАБ 05</span>
-        <h2>Responsive хуудас</h2>
-        <p>Утас, таблет, компьютерийн загвар</p>
+      <a class="lab" href="lab5/">
+        <strong>Лаборатори 5</strong>
+        <span>Responsive вэб хуудас ба Wireframe</span>
       </a>
 
-      <a class="lab-card" href="lab6,7/">
-        <span class="lab-number">ЛАБ 06–07</span>
-        <h2>Зургийн цомог</h2>
-        <p>Анимац, dark mode ба SCSS</p>
+      <a class="lab" href="lab6,7/">
+        <strong>Лаборатори 6,7</strong>
+        <span>Анимэйшн, мультимедиа бүхий зургийн цомог</span>
       </a>
-
-      <a class="lab-card" href="lab8/">
-        <span class="lab-number">ЛАБ 08</span>
-        <h2>Bootstrap ба Tailwind</h2>
-        <p>Нэг зургийн цомог, хоёр арга</p>
+      <a class="lab" href="lab8/">
+        <strong>Лаборатори 8</strong>
+        <span>Bootstrap Ба Tailwind</span>
       </a>
     </nav>
 
     <footer>
-      © 2026 Ц.Маргад · Веб зохиомж
+      2026 · Вэб зохиомж хичээл
     </footer>
   </main>
 </body>
