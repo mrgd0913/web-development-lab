@@ -6,7 +6,32 @@
     <title>Ц.Маргад | Оюутны портал</title>
     <meta name="description" content="Ц.Маргадын хичээл, сонирхол болон веб зохиомжийн лабораторийн ажлууд.">
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .work-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 20px;
+        }
+
+        .work-card {
+            min-width: 0;
+        }
+
+        @media (max-width: 900px) {
+            .work-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .work-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
+
 <body id="top">
     <a class="skip-link" href="#main">Үндсэн агуулга руу</a>
 
@@ -14,7 +39,10 @@
         <div class="container header-inner">
             <a class="brand" href="#top" aria-label="Маргадын порталын эхлэл">
                 <span class="brand-mark" aria-hidden="true">M.</span>
-                <span>Маргад<span class="brand-subtitle">ОЮУТНЫ ПОРТАЛ</span></span>
+                <span>
+                    Маргад
+                    <span class="brand-subtitle">ОЮУТНЫ ПОРТАЛ</span>
+                </span>
             </a>
 
             <nav class="desktop-nav" aria-label="Үндсэн цэс">
@@ -28,8 +56,10 @@
 
             <details class="mobile-menu">
                 <summary>
-                    <span class="menu-icon" aria-hidden="true">☰</span> Цэс
+                    <span class="menu-icon" aria-hidden="true">☰</span>
+                    Цэс
                 </summary>
+
                 <nav class="mobile-links" aria-label="Гар утасны цэс">
                     <a href="#courses">Хичээлүүд</a>
                     <a href="#works">Миний ажлууд</a>
@@ -40,17 +70,6 @@
         </div>
     </header>
 
-    <nav class="container lab-navigation" aria-label="Лабораториуд">
-        <a href="../index.html">Нүүр</a>
-        <a href="../lab%201/">Лаб 1</a>
-        <a href="../lab02,3/">Лаб 2, 3</a>
-        <a href="../lab4/">Лаб 4</a>
-        <a href="../lab5/">Лаб 5</a>
-        <a href="../lab6,7/">Лаб 6,7</a>
-        <a href="../lab8/">Лаб 8</a>
-
-    </nav>
-
     <main class="container" id="main">
         <section class="hero" aria-labelledby="hero-title">
             <div class="hero-copy">
@@ -60,12 +79,13 @@
                 </p>
 
                 <h1 id="hero-title">
-                    Миний суралцах<br><span>орон зай.</span>
+                    Миний суралцах<br>
+                    <span>орон зай.</span>
                 </h1>
 
                 <p class="hero-description">
-                    Сайн уу, би Маргад. Хичээлээр сурсан зүйлс,
-                    хийсэн ажлуудаа энэ хуудсанд нэгтгэж байна.
+                    Сайн уу, би Маргад. Хичээлээр сурсан зүйлс, хийсэн ажлуудаа
+                    энэ хуудсанд нэгтгэж байна.
                 </p>
 
                 <div class="hero-actions">
@@ -133,14 +153,18 @@
                 <div class="course-grid">
                     <article class="course-card">
                         <div class="card-top">
-                            <span class="course-icon icon-blue" aria-hidden="true">&lt;/&gt;</span>
+                            <span class="course-icon icon-blue" aria-hidden="true">
+                                &lt;/&gt;
+                            </span>
                             <span class="card-index">01</span>
                         </div>
+
                         <h3>Веб зохиомж</h3>
                         <p>
                             Веб хуудасны бүтэц, өнгө, байрлалыг зохиож,
                             дэлгэц бүрд тохирох загвар бүтээнэ.
                         </p>
+
                         <div class="card-tags">
                             <span>HTML</span>
                             <span>CSS</span>
@@ -149,14 +173,18 @@
 
                     <article class="course-card">
                         <div class="card-top">
-                            <span class="course-icon icon-lilac" aria-hidden="true">{ }</span>
+                            <span class="course-icon icon-lilac" aria-hidden="true">
+                                { }
+                            </span>
                             <span class="card-index">02</span>
                         </div>
+
                         <h3>Өгөгдлийн бүтэц</h3>
                         <p>
                             Жагсаалт, стек, дараалал ашиглан өгөгдлийг
                             зохион байгуулах аргуудыг судална.
                         </p>
+
                         <div class="card-tags">
                             <span>Java</span>
                             <span>Жагсаалт</span>
@@ -165,14 +193,18 @@
 
                     <article class="course-card">
                         <div class="card-top">
-                            <span class="course-icon icon-green" aria-hidden="true">#</span>
+                            <span class="course-icon icon-green" aria-hidden="true">
+                                #
+                            </span>
                             <span class="card-index">03</span>
                         </div>
+
                         <h3>Мэдээллийн аюулгүй байдал</h3>
                         <p>
                             Мэдээлэлд учрах аюул, эмзэг байдал болон
                             хамгаалалтын үндсэн аргуудыг ойлгоно.
                         </p>
+
                         <div class="card-tags">
                             <span>Эрсдэл</span>
                             <span>Хамгаалалт</span>
@@ -181,14 +213,18 @@
 
                     <article class="course-card">
                         <div class="card-top">
-                            <span class="course-icon icon-peach" aria-hidden="true">∑</span>
+                            <span class="course-icon icon-peach" aria-hidden="true">
+                                ∑
+                            </span>
                             <span class="card-index">04</span>
                         </div>
+
                         <h3>Дискрет бүтэц</h3>
                         <p>
                             Логик, олонлог, харьцаа болон индукцийн
                             аргаар бодлого бодож сурна.
                         </p>
+
                         <div class="card-tags">
                             <span>Логик</span>
                             <span>Математик</span>
@@ -197,14 +233,18 @@
 
                     <article class="course-card">
                         <div class="card-top">
-                            <span class="course-icon icon-yellow" aria-hidden="true">DB</span>
+                            <span class="course-icon icon-yellow" aria-hidden="true">
+                                DB
+                            </span>
                             <span class="card-index">05</span>
                         </div>
+
                         <h3>Мэдээллийн сан</h3>
                         <p>
                             Өгөгдлийг хүснэгтээр холбож, SQL ашиглан
                             хадгалах, хайх арга барилтай танилцана.
                         </p>
+
                         <div class="card-tags">
                             <span>SQL</span>
                             <span>Өгөгдөл</span>
@@ -213,14 +253,18 @@
 
                     <article class="course-card">
                         <div class="card-top">
-                            <span class="course-icon icon-pink" aria-hidden="true">◎</span>
+                            <span class="course-icon icon-pink" aria-hidden="true">
+                                ◎
+                            </span>
                             <span class="card-index">06</span>
                         </div>
+
                         <h3>Сэтгэл судлалын үндэс</h3>
                         <p>
-                            Хүний зан төлөв, танин мэдэхүй,
-                            хувь хүний онцлогийн талаар судална.
+                            Хүний зан төлөв, танин мэдэхүй, хувь хүний
+                            онцлогийн талаар судална.
                         </p>
+
                         <div class="card-tags">
                             <span>Зан төлөв</span>
                             <span>Танин мэдэхүй</span>
@@ -235,10 +279,12 @@
                     <p class="eyebrow">МИНИЙ ТУХАЙ</p>
                     <h2 id="about-title">Ц.Маргад</h2>
                     <p class="student-code">B251870025</p>
+
                     <p>
                         ШУТИС-ийн оюутан. Веб хөгжүүлэлт, программчлал,
                         шинэ технологи сонирхон суралцаж байна.
                     </p>
+
                     <a class="text-link" href="../lab%201/index.html">
                         CV үзэх <span aria-hidden="true">↗</span>
                     </a>
@@ -264,21 +310,21 @@
             </div>
 
             <div class="work-grid">
-                <a class="work-card" href="../lab%201/index.html">
+                <a class="work-card" href="../lab%201/">
                     <span class="work-number">ЛАБ 01</span>
                     <h3>Миний CV</h3>
                     <p>Танилцуулга, чадвар, хобби</p>
                     <span class="work-arrow" aria-hidden="true">↗</span>
                 </a>
 
-                <a class="work-card" href="../lab02,3/index.html">
+                <a class="work-card" href="../lab02,3/">
                     <span class="work-number">ЛАБ 02–03</span>
                     <h3>Бүртгэлийн форм</h3>
                     <p>Semantic HTML ба CSS загвар</p>
                     <span class="work-arrow" aria-hidden="true">↗</span>
                 </a>
 
-                <a class="work-card" href="../lab4/index.html">
+                <a class="work-card" href="../lab4/">
                     <span class="work-number">ЛАБ 04</span>
                     <h3>Хуудасны зохиомж</h3>
                     <p>Flexbox ба CSS Grid</p>
@@ -292,10 +338,17 @@
                     <span class="work-arrow" aria-hidden="true">↗</span>
                 </a>
 
-                <a class="work-card" href="../lab6/index.html">
-                    <span class="work-number">ЛАБ 06</span>
+                <a class="work-card" href="../lab6,7/">
+                    <span class="work-number">ЛАБ 06–07</span>
                     <h3>Зургийн цомог</h3>
-                    <p>3D flip карт, анимэйшн ба мультимедиа</p>
+                    <p>3D flip карт, анимац ба SCSS</p>
+                    <span class="work-arrow" aria-hidden="true">↗</span>
+                </a>
+
+                <a class="work-card" href="../lab8/">
+                    <span class="work-number">ЛАБ 08</span>
+                    <h3>Bootstrap ба Tailwind</h3>
+                    <p>Нэг зургийн цомог, хоёр арга</p>
                     <span class="work-arrow" aria-hidden="true">↗</span>
                 </a>
             </div>
